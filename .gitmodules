@@ -1,0 +1,6 @@
+[submodule "OncoNet_Public"]
+	path = OncoNet_Public
+	url = git@github.com:yala/OncoNet_Public.git
+[submodule "OncoData_Public"]
+	path = OncoData_Public
+	url = git@github.com:yala/OncoData_Public.git

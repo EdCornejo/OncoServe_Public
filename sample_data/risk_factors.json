@@ -1,0 +1,54 @@
+{
+    "11111111": {
+        "accessions": {
+             "2222222": {
+                 "age": 55,
+                 "density": 2,
+                 "height": 70,
+                 "weight": 165
+            }
+        },
+        "ashkenazi": 1,
+        "biopsy_LCIS": 0,
+        "biopsy_LCIS_age": -1,
+        "biopsy_atypical_hyperplasia": 0,
+        "biopsy_atypical_hyperplasia_age": -1,
+        "biopsy_hyperplasia": 0,
+        "biopsy_hyperplasia_age": -1,
+        "menarche_age": 10,
+        "menopause_age": 52,
+        "first_pregnancy_age": 25,
+        "brca1": -1,
+        "brca2": -1,
+        "combined_hrt": 0,
+        "combined_hrt_duration": -1,
+        "combined_hrt_first_age": -1,
+        "combined_hrt_last_age": -1,
+        "estrogen_hrt": 0,
+        "estrogen_hrt_duration": -1,
+        "estrogen_hrt_first_age": -1,
+        "estrogen_hrt_last_ age": -1,
+        "unknown_hrt": 0,
+        "unknown_hrt_duration": -1,
+        "unknown_hrt_first_age": -1,
+        "unknown_hrt_last_age": -1,
+        "num_births": 2,
+        "race": 1,
+        "relatives": {
+           "B": [],
+           "D": [{
+                "breast_cancer": 1,
+                "ovarian_cancer": 0}],
+            "F": [],
+            "M": [],
+            "MA": [],
+            "MG": [],
+            "PA": [],
+            "PG": [],
+            "S": []},
+        "ovarian_cancer": 0,
+        "ovarian_cancer_age": -1,
+        "any_breast_cancer": 0,
+        "any_breast_cancer_age": -1
+    }
+}
