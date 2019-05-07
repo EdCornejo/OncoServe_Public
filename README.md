@@ -13,7 +13,7 @@ OncoServe spins up a webserver in a docker container encapsulating all the softw
 The repositories perform the following functions:
 - [OncoData](https://github.com/yala/OncoData_Public): handles conversion from dicom to png
 - [OncoNet](https://github.com/yala/OncoNet_Public): used for model development and training.
-- OncoServe: Wraps model in a webserver that allows it to return outputs in real time given an HTTP request. Used in clinical implementations. 
+- [OncoServe](https://github.com/yala/OncoServe_Public): Wraps model in a webserver that allows it to return outputs in real time given an HTTP request. Used in clinical implementations. 
 
 ## System Requirements
 - [Docker](https://www.docker.com/)
