@@ -1,4 +1,4 @@
-# OncoServe: Deploying Deep Learning Models to Breast Cancer Risk Assessment, and Breast Density.
+# OncoServe: Deploying Deep Learning Models for Breast Cancer Risk Assessment, and Breast Density Assessment.
 
 ## Introduction
 This repository shares the models described in [A Deep Learning Mammography-Based Model for Improved Breast Cancer Risk Prediction](https://pubs.rsna.org/doi/), and [Mammographic Breast Density Assessment Using
