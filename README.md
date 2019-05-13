@@ -5,7 +5,7 @@ This repository shares the models described in [A Deep Learning Mammography-Base
 Deep Learning: Clinical Implementation](https://pubs.rsna.org/doi/10.1148/radiol.2018180694) as a (Flask) webserver.  You can send the webserver regular HTTP requests with a list of dicoms for a given mammogram, and a set of metadata keys (like MRN or Accession), and the webserver will return the DL density assessment along back with the same metadata. We note that we do not support all dicom formats, we assume presentation view mammograms, and have only tested this system with Hologic mammograms.
 
 ## Usage
-This tool is provided for research purposes only and no responsibility is accepted for clinical decisions arising from its use. Commercial use requires a license, for further information please email adamyala@mit.edu.
+This tool is provided for research purposes only and no responsibility is accepted for clinical decisions arising from its use. It is available upon request (email adamyala@mit.edu).  Commercial use requires a license, for further information please email adamyala@mit.edu.
 
 ## Structure:
 OncoServe spins up a webserver in a docker container encapsulating all the software requirments to convert dicoms, and run the deep learning models. It imports [OncoNet](https://github.com/yala/OncoNet_Public) and [OncoData](https://github.com/yala/OncoData_Public) as submodules.
