@@ -113,3 +113,33 @@ class MammoCancer5YrRiskImgOnlyConfig(Config):
     ONCONET_ARGS = Args(ONCONET_CONFIG)
     ONCONET_ARGS = Args(ONCONET_CONFIG)
 
+class MammoCancer1YrRiskImgOnlyConfig(Config):
+    NAME = '2D_Mammo_Cancer_1Year_Risk_ImgOnly'
+    AGGREGATION="max"
+
+    def cancer_risk_func(pred):
+        return pred[1]
+
+    ONCONET_CONFIG = {
+        'cuda': 'DEVICE' in os.environ and os.environ['DEVICE'] == 'GPU',
+        'img_mean': [7240.058],
+        'img_std': [12072.904],
+        'img_size': [1664,2048],
+        'num_chan': 3,
+        'num_gpus': 1,
+        'test_image_transformers': ['scale_2d', 'align_to_left'],
+        'test_tensor_transformers': ["force_num_chan_2d", "normalize_2d"],
+        'additional': None,
+        'label_map': cancer_risk_func,
+        'snapshot': 'snapshots/mgh_mammo_cancer_1yr_risk_nov22_2018.pt',
+        'video':False,
+        'use_precomputed_hiddens': False,
+        'use_risk_factors': False,
+        "use_region_annotation": False,
+        'use_second_order_risk_factor_features': False,
+        'callibrator_path': 'snapshots/callibrator_mgh_mammo_cancer_1yr_risk_nov22_2018.pt'
+    }
+    ONCONET_ARGS = Args(ONCONET_CONFIG)
+    ONCONET_ARGS = Args(ONCONET_CONFIG)
+
+
