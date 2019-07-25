@@ -21,22 +21,23 @@ The repositories perform the following functions:
 
 ## How to run it?
 ### Startup Steps:
-- Pull most recent docker image from : `yala/oncoserve:0.2.1`
+- First, reach out directly to gain access. Please email adamyala@mit.edu with a brief
+description of the study you intend to run.  Attach your dockerhub id.
 
-``` docker pull yala/oncoserve:0.2.1```
+- Next, we grant you access to the dockerhub image and indicate to you which image to pull from. 
+
+- Pull most recent docker image from dockerhub.
+``` docker pull learn2cure/name_of_docker_repo:0.1.0```
 
 - Start the docker container following the instructions for the specific application (listed bellow).
 
-Docker image for most recent version is at:
-`yala/oncoserve:0.2.1`
-
 ### Running the Density Application:
-```docker run -p 5000:5000 -e CONFIG_NAME=config.DensityConfig -e -v /path/to/local/logfile:/OncoServe/LOGS  -v /path/to/local/tmp_images_dir:/OncoServe/tmp_images yala/oncoserve:0.2.1```
+```docker run -p 5000:5000 -e CONFIG_NAME=config.DensityConfig -v  /path/to/local/logfile:/OncoServe /LOGS  learn2cure/oncoserve_density:0.1.0```
 
 ### Running the Image-Only DL 5-Year Risk Application: (aka MIRAI v0.1)
-```docker run -p 5000:5000 -e CONFIG_NAME=config.MammoCancer5YrRiskImgOnlyConfig -e -v /path/to/local/logfile:/OncoServe/LOGS  -v /path/to/local/tmp_images_dir:/OncoServe/tmp_images yala/oncoserve:0.2.1```
+```docker run -p 5000:5000 -e CONFIG_NAME=config.MammoCancer5YrRiskImgOnlyConfig -v  /path/to/local/logfile:/OncoServe /LOGS  learn2cure/oncoserve_mammo_risk:0.1.0```
 ### Running the Hybrid DL 5-Year Risk Application: (aka MIRAI v0.2) 
-```docker run -p 5000:5000 -e CONFIG_NAME=config.MammoCancer5YrRiskImgOnlyConfig  -v ~/OncoServe/LOGS:/OncoServe/LOGS  -v ~/OncoServe/tmp_images:/OncoServe/tmp_images yala/oncoserve:0.2.1```
+```docker run -p 5000:5000 -e CONFIG_NAME=config.MammoCancer5YrRiskHybridConfig -v  /path/to/local/logfile:/OncoServe /LOGS  learn2cure/oncoserve_mammo_risk:0.1.0```
 
 ### Notes on Docker 
 The docker container takes the following environment variables:
