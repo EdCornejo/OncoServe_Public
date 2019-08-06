@@ -34,6 +34,10 @@ description of the study you intend to run.  Attach your dockerhub id.
 ### Running the Density Application:
 ```docker run -p 5000:5000 -e CONFIG_NAME=config.DensityConfig -v  /path/to/local/logfile:/OncoServe /LOGS  learn2cure/oncoserve_density:0.1.0```
 
+
+### Running the Triage Application:
+```docker run -p 5000:5000 -e CONFIG_NAME=config.MammoCancer1YrRiskImgOnlyConfig -v  /path/to/local/logfile:/OncoServe /LOGS  learn2cure/oncoserve_triage:0.1.0```
+
 ### Running the Image-Only DL 5-Year Risk Application: (aka MIRAI v0.1)
 ```docker run -p 5000:5000 -e CONFIG_NAME=config.MammoCancer5YrRiskImgOnlyConfig -v  /path/to/local/logfile:/OncoServe /LOGS  learn2cure/oncoserve_mammo_risk:0.1.0```
 ### Running the Hybrid DL 5-Year Risk Application: (aka MIRAI v0.2) 
