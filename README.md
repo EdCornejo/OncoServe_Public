@@ -60,7 +60,7 @@ To view the logs/tmp images, you can mount those directories to outside the dock
 
 ### Streaming mode (One mammogram at a time):
 Once your webserver is setup, you can get model assessments by sending it HTTP requests. 
-See `tests/demo.py` for a usage example in python. The demo is organized as a python test case, and show cases how the system should behave given faulty inputs and correct inputs. Note, you'll need to update the paths in the setUp function in the demo to refer to real dicom paths (see comments in the file).
+See `tests/demo.py` for a usage example in python or `tests/demo.js` for a usage example in javascript. The demo is organized as a python test case, and show cases how the system should behave given faulty inputs and correct inputs. Note, you'll need to update the paths in the setUp function in the demo to refer to real dicom paths (see comments in the file).
 
 ### Batch mode:
 This functionality is not yet supported; if you're interested in this functionality, please reachout to let me know. In the meanwhile, you can simple iterate through mammograms and HTTP request per mammogram. 
